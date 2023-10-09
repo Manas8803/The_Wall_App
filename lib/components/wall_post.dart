@@ -55,7 +55,10 @@ class _WallPostState extends State<WallPost> {
     return Container(
       // Margin around the entire WallPost
       child: Padding(
-        padding: const EdgeInsets.all(15.0), // Padding inside the WallPost
+        padding: const EdgeInsets.symmetric(
+          vertical: 10.0, // Vertical padding
+          horizontal: 20.0, // Horizontal padding
+        ), // Padding inside the WallPost
         child: Container(
           decoration: BoxDecoration(
             color: Colors.white,
@@ -70,7 +73,10 @@ class _WallPostState extends State<WallPost> {
             ],
           ),
           child: Padding(
-            padding: const EdgeInsets.all(4),
+            padding: const EdgeInsets.symmetric(
+              vertical: 5.0, // Vertical padding
+              horizontal: 10.0, // Horizontal padding
+            ),
             child: Row(
               children: [
                 Column(
